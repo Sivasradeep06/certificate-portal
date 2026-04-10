@@ -213,7 +213,8 @@ export function CertificateEditor({
     if (!canvas || !obj) return;
     
     if (property === 'textAlign') {
-      obj.set({ 
+      const textObj = obj as fabric.IText;
+      textObj.set({ 
         textAlign: value as string, 
         originX: value as string 
       });
