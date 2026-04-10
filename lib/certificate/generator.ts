@@ -30,9 +30,9 @@ function resolveValue(
     case 'status': {
       const statusMap: Record<string, string> = {
         'participated': 'Participated',
-        '1st': '1st Place Winner',
-        '2nd': '2nd Place Winner',
-        '3rd': '3rd Place Winner',
+        '1st': '1st',
+        '2nd': '2nd',
+        '3rd': '3rd',
       };
       return statusMap[participant.status] ?? participant.status;
     }
